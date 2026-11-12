@@ -1,0 +1,17 @@
+<template>
+  <ContentRenderer v-if="page" :value="page"/>
+</template>
+
+<script setup lang="ts">
+  const route = useRoute()
+
+  const { data: page } = await useAsyncData('page-' + route.path, () => {
+    return queryCollection('content').path(route.path).first()
+  })
+
+console.log(route.path)
+
+  if (!page.value) {
+    throw createError({ statusCode: 404, statusMessage: 'Page not found' + route.path, fatal: true })
+  }
+</script>
