@@ -114,14 +114,56 @@ button {
     font-size: 1rem;
 }
 
+a {
+    font: inherit;
+}
+
 .sf_trans {
     font-family: "SF TransRobotics", 'Times New Roman', Times, serif;
     font-style: inherit;
     color: inherit;
 }
 
-.opensans, .normal {
+.opensans,
+.normal {
     font-family: 'Open Sans', 'Raleway', Arial, Helvetica, sans-serif;
     font-style: inherit;
     color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    all: revert;
+    font-family: "SF TransRobotics", 'Times New Roman', Times, serif;
+    font-style: inherit;
+    color: inherit;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-size: 1rem;
 }

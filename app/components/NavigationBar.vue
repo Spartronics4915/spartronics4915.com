@@ -1,7 +1,7 @@
 <template>
     <div class="bar f cy">
         <div class="sf_trans title">
-            <NuxtLink href="/" custom>Spartronics 4915</NuxtLink>
+            <NuxtLink to="/">Spartronics 4915</NuxtLink>
         </div>
     </div>
 </template>
@@ -13,6 +13,10 @@
         height: 4rem;
         padding: 1rem;
         font-size: 2.5rem;
+    }
+
+    a {
+        
     }
 
     .title {
